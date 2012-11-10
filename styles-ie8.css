@@ -1,0 +1,147 @@
+/*########## ACTUALIZA NAVEGADOR ##########*/
+
+#actualizaNav {
+  background-color: #CCC;
+  color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 1px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#actualizaNav .texto {
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+}
+
+#navegadores {
+  text-align: center;
+  margin: 0;
+}
+
+#navegadores a {
+  display: inline-block;
+  padding: 5px;
+}
+
+#navegadores a img {
+  border: none;
+}
+
+#actualizaNav .cierraAviso {
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  float: right;
+  font-size: 0.9em;
+  margin: -50px 20px 0 0;
+  padding: 5px;
+  transition: .3s;
+}
+
+#actualizaNav .cierraAviso:hover {
+  background-color: #A87E54;
+  cursor: pointer;
+  cursor: hand;
+  transition: .3s;
+}
+
+/*########## VIDEOS ##########*/
+
+.boxTodos {
+  border: 40px solid #CCC;
+}
+
+.boxSextoMundo {
+  border: 40px solid #333;
+}
+
+/*########## SOCIAL ##########*/
+
+section#social {
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#AAFFFFFF', endColorstr='#AAFFFFFF');
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#AAFFFFFF', endColorstr='#AAFFFFFF');
+}
+
+div#openSocial {
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#66000000', endColorstr='#66000000');
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#66000000', endColorstr='#66000000');
+}
+
+div#openSocial:hover {
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#CC1371D1', endColorstr='#CC1371D1');
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#CC1371D1', endColorstr='#CC1371D1');
+}
+
+section#social article h2 a:hover,
+section#social article h2 a:active {
+  color: #CCC;
+}
+
+div#comments ul li p {
+  color: #2877B7;
+}
+
+
+
+/*########## FOTOS ##########*/
+
+section#fotos {
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#AA684424', endColorstr='#AA684424');
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#AA684424', endColorstr='#AA684424');
+}
+
+div#galeria div:hover,
+div#galeria div:active {
+  border-color: #1371D1;
+}
+
+
+
+/*##### LEITMOTIV #####*/
+
+div#botonesDescarga a {
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#88000000', endColorstr='#88000000');
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#88000000', endColorstr='#88000000');
+}
+
+div#botonesDescarga a:hover {
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#CC1371D1', endColorstr='#CC1371D1');
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#CC1371D1', endColorstr='#CC1371D1');
+}
+
+div#tooltipDescargas span {
+  filter: alpha(opacity = 10);
+  -ms-filter: alpha(opacity = 10);
+}
+
+span.abreDescargar:hover {
+  background-color: #1371D1;
+}
+
+
+
+/*##### FOOTER #####*/
+
+footer {
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#AAFFFFFF', endColorstr='#AAFFFFFF');
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#AAFFFFFF', endColorstr='#AAFFFFFF');
+}
+
+.lm:hover {
+  background-color: #1371D1;
+}
+
+.fb:hover {
+  background-color: #3B5998;
+}
+
+.tw:hover {
+  background-color: #00BEF6;
+}
+
+.yt:hover {
+  background-color: #C8312B;
+}

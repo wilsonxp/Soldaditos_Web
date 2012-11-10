@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="Description" content="Haciendo canciones desde el 2005. Entra y escucha &quot;Todos&quot; y &quot;Sexto Mundo&quot;, adelantos de nuestro pr&oacute;ximo DVD.">
+  <title>Soldaditos Rock - Escuch&aacute; "Todos" y mir&aacute; "Sexto Mundo", adelantos de nuestro DVD</title>
+  
+  <link rel="stylesheet" href="styles.css">
+  <!--[if IE 8]> <link rel="stylesheet" href="styles-ie8.css"> <![endif]-->
+  <!--[if IE 9]> <link rel="stylesheet" href="styles-ie9.css"> <![endif]-->
+  <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Cagliostro" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Six+Caps" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript" src="js/selectivizr-min.js"></script>
+    <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+  <![endif]-->
+  <script type="text/javascript" src="js/fancybox/jquery.fancybox.js"></script>
+  <script type="text/javascript" src="js/html5shiv-min.js"></script>
+  <script type="text/javascript" src="js/prefixfree.min.js"></script>
+  <script type="text/javascript" src="js/funciones-min.js"></script>
+</head>
+
+<body>
+<!--[if (gte IE 6)&(lte IE 8)]>
+<div id="actualizaNav">
+  <p class="texto">El navegador que estas usando es un poco anticuado, actualizalo para ver el sitio funcionando al 100%.</p>
+  <p id="navegadores">
+    <a href="https://www.google.com/intl/es/chrome/browser/?hl=es"><img src="imagenes/Chrome.png" alt="Descarga Google Chrome" /></a>
+    <a href="http://www.mozilla.org/es-AR/firefox/new/"><img src="imagenes/Firefox.png" alt="Descarga Mozilla Firefox" /></a>
+    <a href="http://windows.microsoft.com/es-ES/internet-explorer/download-ie"><img src="imagenes/InternetExplorer.png" alt="Descarga Internet Explorer" /></a>
+    <a href="http://www.opera.com/download/"><img src="imagenes/Opera.png" alt="Descarga Opera" /></a>
+    <a href="http://support.apple.com/es_ES/downloads/#internet"><img src="imagenes/Safari.png" alt="Descarga Safari" /></a>
+  </p>
+  <span class="cierraAviso">X</span>
+</div>
+<![endif]-->
+<section id="contenedor">
+  <section id="video">
+    <header>
+      <h1><a href="http://www.soldaditosrock.com.ar">Soldaditos Rock - Sexto Mundo</a></h1>
+    </header>
+    <article id="fondoVideo">
+      <div class="boxTodos">
+        <span id="escuchaTodos">ESCUCH&Aacute;<br />"TODOS"</span>
+        <iframe id="videoTodos" width="779" height="406" src="http://www.youtube.com/embed/TqtMW9CDxmQ?enablejsapi=1&amp;showinfo=0&amp;wmode=opaque"></iframe>
+        <span class="cerrarVideo">X</span>
+      </div>
+      <div class="boxSextoMundo">
+        <span id="miraSextoMundo">MIR&Aacute;<br />"SEXTO MUNDO"</span>
+        <iframe id="videoSextoMundo" width="779" height="406" src="http://www.youtube.com/embed/3VqIoHTOIgY?enablejsapi=1&amp;showinfo=0&amp;wmode=opaque"></iframe>
+        <span class="cerrarVideo">X</span>
+      </div>
+    </article>
+  </section>
+</section>
+<div id="contenedorSocial">
+  <section id="social">
+    <article id="youtube">
+      <h2>
+        <img class="banderin" src="imagenes/banderinYouTube_c.png" alt="http://www.youtube.com/SoldaditosRock" height="84" width="84" />
+        <a href="http://www.youtube.com/SoldaditosRock" title="Canal de Soldaditos Rock en YouTube">youtube.com/SoldaditosRock</a>
+      </h2>
+      <div id="comments"></div>
+      <div class="centrado">
+        <span id="cargarMenos" class="cargarMasMenos">&lt;</span>
+        <span id="cargarMas" class="cargarMasMenos">&gt;</span>
+      </div>
+    </article>
+    <script type="text/javascript" src="http://gdata.youtube.com/feeds/api/videos/3VqIoHTOIgY/comments?alt=json-in-script&amp;format=5&amp;callback=comentariosYT"></script>
+    <article id="twitter">
+      <h2>
+        <img class="banderin" src="imagenes/banderinTwitter_c.png" alt="http://www.youtube.com/SoldaditosRock" height="84" width="84" />
+        <a href="http://www.twitter.com/SoldaditosRock" title="Twitter oficial de Soldaditos Rock">@SoldaditosRock</a>
+      </h2>
+      <div id="twitter_update_list">
+        <a class="twitter-timeline" width="315" height="540" href="https://twitter.com/SoldaditosRock" data-widget-id="261680569954484224">
+          Tweets por @SoldaditosRock
+        </a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+    </article>
+    <!-- TWITTER FUNCTIONS
+    <script type="text/javascript" src="js/twitter-min.js"></script>
+    <script type="text/javascript" src="https://api.twitter.com/1/statuses/user_timeline.json?screen_name=soldaditosrock&callback=twitterCallback2"></script>
+    END TWITTER FUNCTIONS -->
+    <div id="openSocial"><img id="flecha" src="imagenes/arrow_down.png" alt="Abrir comentarios y tweets" width="8" height="9" /></div>
+  </section>
+</div>
+<section id="fotos">
+  <h2>Fotos - Cinema de los Arrecifes</h2>
+  <div id="galeria">
+    <div><a href="fotos/01_640_480.jpg" rel="galeria"><img src="fotos/thumbs/01_thumb.jpg" alt="Soldaditos - Sexto Mundo (Cinema de los Arrecifes - Mar 2011)"></a></div>
+    <div><a href="fotos/02_640_480.jpg" rel="galeria"><img src="fotos/thumbs/02_thumb.jpg" alt="Soldaditos - Sexto Mundo (Cinema de los Arrecifes - Mar 2011)"></a></div>
+    <div><a href="fotos/03_640_480.jpg" rel="galeria"><img src="fotos/thumbs/03_thumb.jpg" alt="Soldaditos - Sexto Mundo (Cinema de los Arrecifes - Mar 2011)"></a></div>
+    <div><a href="fotos/04_640_480.jpg" rel="galeria"><img src="fotos/thumbs/04_thumb.jpg" alt="Soldaditos - Sexto Mundo (Cinema de los Arrecifes - Mar 2011)"></a></div>
+    <div><a href="fotos/05_640_480.jpg" rel="galeria"><img src="fotos/thumbs/05_thumb.jpg" alt="Soldaditos - Sexto Mundo (Cinema de los Arrecifes - Mar 2011)"></a></div>
+    <div><a href="fotos/06_640_480.jpg" rel="galeria"><img src="fotos/thumbs/06_thumb.jpg" alt="Soldaditos - Sexto Mundo (Cinema de los Arrecifes - Mar 2011)"></a></div>
+    <div><a href="fotos/07_640_480.jpg" rel="galeria"><img src="fotos/thumbs/07_thumb.jpg" alt="Soldaditos - Sexto Mundo (Cinema de los Arrecifes - Mar 2011)"></a></div>
+    <div><a href="fotos/08_640_480.jpg" rel="galeria"><img src="fotos/thumbs/08_thumb.jpg" alt="Soldaditos - Sexto Mundo (Cinema de los Arrecifes - Mar 2011)"></a></div>
+    <div><a href="fotos/09_640_480.jpg" rel="galeria"><img src="fotos/thumbs/09_thumb.jpg" alt="Soldaditos - Sexto Mundo (Cinema de los Arrecifes - Mar 2011)"></a></div>
+    <div><a href="fotos/10_640_480.jpg" rel="galeria"><img src="fotos/thumbs/10_thumb.jpg" alt="Soldaditos - Sexto Mundo (Cinema de los Arrecifes - Mar 2011)"></a></div>
+    <div><a href="fotos/11_640_480.jpg" rel="galeria"><img src="fotos/thumbs/11_thumb.jpg" alt="Soldaditos - Sexto Mundo (Cinema de los Arrecifes - Mar 2011)"></a></div>
+    <div><a href="fotos/12_640_480.jpg" rel="galeria"><img src="fotos/thumbs/12_thumb.jpg" alt="Soldaditos - Sexto Mundo (Cinema de los Arrecifes - Mar 2011)"></a></div>
+    <div><a href="fotos/13_640_480.jpg" rel="galeria"><img src="fotos/thumbs/13_thumb.jpg" alt="Soldaditos - Sexto Mundo (Cinema de los Arrecifes - Mar 2011)"></a></div>
+    <div><a href="fotos/15_640_480.jpg" rel="galeria"><img src="fotos/thumbs/15_thumb.jpg" alt="Soldaditos - Sexto Mundo (Cinema de los Arrecifes - Mar 2011)"></a></div>
+  </div>
+  <div id="borde_inferior_fotos"></div>
+</section>
+<section id="fechas">
+  <h2>Fechas</h2>
+  <ul>
+    <li>
+      <div class="descFecha">
+        <span class="fechaFecha">3-Noviembre-2012</span><br/><br/>
+        <h3>Tomate Bar</h3>
+        <p class="ciudadFecha">Arrecifes, Buenos Aires</p>
+        <p>Direccion: R. Gutierrez y Moreno entre Peralta y Esmeralda</p>
+        <p>Hora: 00:00 Hs.</p>
+        <p>Entrada: $10</p>
+        <p><a href="#">+ Ir al evento</a></p>
+      </div>
+      <a href="http://goo.gl/maps/YKuVX" title="Ir a Google Maps">
+        <img class="mapFecha" src="http://maps.google.com/maps/api/staticmap?center=-34.063201,-60.105322&zoom=15&size=150x150&sensor=false&markers=color:red%7C-34.063201,-60.105322" alt="Ubicación de Tomate Bar" />
+      </a>
+    </li>
+    <li>
+      <div class="descFecha">
+        <span class="fechaFecha">S&aacute;bado, 3 de Noviembre</span><br/><br/>
+        <h3>Makena Cantina Club</h3>
+        <p class="ciudadFecha">Cap. Federal, Buenos Aires</p>
+        <p>Direccion: Fitz Roy 1519</p>
+        <p>Hora: 01:30 Hs.</p>
+        <p>Entrada: $25</p>
+        <p><a href="#">+ Ir al evento</a></p>
+      </div>
+      <a href="http://goo.gl/maps/uYWCT" title="Ir a Google Maps">
+        <img class="mapFecha" src="http://maps.google.com/maps/api/staticmap?center=Fitz+Roy+1519,Palermo,Buenos+Aires&zoom=15&size=150x150&sensor=false&markers=color:blue%7CFitz+Roy+1519,Palermo,Buenos+Aires" alt="Ubicación de Tomate Bar" />
+      </a>
+    </li>
+    <li>
+      <div class="descFecha">
+        <span class="fechaFecha">03/11/2012</span><br/><br/>
+        <h3>Libario Bar Multiespacio</h3>
+        <p class="ciudadFecha">Cap. Federal, Buenos Aires</p>
+        <p>Direccion: Julián Alvarez 1315</p>
+        <p>Hora: 22:00 Hs.</p>
+        <p>Entrada: $20</p>
+        <p><a href="#">+ Ir al evento</a></p>
+      </div>
+      <a href="http://goo.gl/maps/WQYY1" title="Ir a Google Maps">
+        <img class="mapFecha" src="http://maps.google.com/maps/api/staticmap?center=Julian+Alvarez+1315,Capital+Federal,Buenos+Aires&zoom=15&size=150x150&sensor=false&markers=color:white%7CJulian+Alvarez+1315,Capital+Federal,Buenos+Aires" alt="Ubicación de Tomate Bar" />
+      </a>
+    </li>
+  </ul>
+</section>
+<section id="leitmotiv">
+  <div id="leitmotivColor"></div>
+  <div id="leitmotivContenido">
+    <div id="titulos">
+      <span id="leitmotivSoldaditos">SOLDADITOS</span>
+      <h2 id="leitmotivTitulo">leitmotiv</h2>
+    </div>
+    <div id="descripcion">
+      <p>Segundo trabajo discogr&aacute;fico de <span class="negrita">SOLDADITOS</span>, grabado y masterizado en <span class="negrita">Sala Lavarden</span>, propiedad de Los Aut&eacute;nticos Decadentes; en 2011. Producido art&iacute;sticamente por <span class="negrita">Gonzalo "Gutty" Guti&eacute;rrez</span>, guitarrista de Sponsors y Los Animalitos.
+        Este disco lo dejamos a disposici&oacute;n de ustedes a modo de agradecimiento para que lo puedan <span class="abreDescargar">descargar de manera gratuita</span>.
+      </p>
+    </div>
+    <div id="botonesDescarga">
+        <a href="http://www.soldaditosrock.com.ar/Audios/Mp3-256/Leitmotiv.rar" class="descargar mp3">MP3</a>
+        <a href="http://www.soldaditosrock.com.ar/Audios/Wav/Leitmotiv.rar" class="descargar wav">WAV</a>
+        <a href="http://www.soldaditosrock.com.ar/Audios/Flac/Leitmotiv.rar" class="descargar flac">FLAC</a>
+        <div id="tooltipDescargas">
+          <span class="mp3">
+            <p>Escuchalo en tu reproductor Mp3</p>
+            <p>Tamaño: 61 Mb</p>
+          </span>
+          <span class="wav central">
+            <p>Grabalo como CD de audio</p>
+            <p>Tamaño: 288 Mb</p>
+          </span>
+          <span class="flac">
+            <p>Audio 100% fiel al original de estudio</p>
+            <p>Tamaño: 186 Mb</p>
+          </span>
+        </div>
+    </div>
+  </div>
+  <div id="leitmotivCerrar">
+    <img src="imagenes/arrow_up.png" alt="Cerrar" />
+  </div>
+</section>
+<footer>
+  <span>Dise&ntilde;o por <a class="lm" href="http://www.twitter.com/luciano_sds">Luciano Mu&ntilde;oz</a></span>
+  <span id="LinksSocial">
+      <a class="fb" href="http://www.facebook.com/soldaditosrock">Facebook</a> - 
+      <a class="tw" href="http://www.twitter.com/soldaditosrock">Twitter</a> - 
+      <a class="yt" href="http://www.youtube.com/soldaditosrock">YouTube</a>
+  </span>
+</footer>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22934744-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,807 @@
+/*#### FECHAS ####*/
+
+#fechas {
+  background-color: rgba(104,68,36,0.7);
+  font-family: Tahoma;
+  font-size: 0.75em;
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 1349px;
+}
+
+#fechas h2 {
+  border-bottom: 1px dotted #CCC;
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 2.5em;
+  margin: 0 20px 10px 20px;
+  text-shadow: -2px 0 black, 0 2px black,
+                2px 0 black, 0 -2px black;
+}
+
+#fechas ul {
+  border-left: 1px dotted #CCC;
+  border-right: 1px dotted #CCC;
+  list-style: none;
+  margin: 15px 15px 15px 15px;
+  padding: 0;
+  position: relative;
+  text-align: center;
+}
+
+#fechas ul li {
+  background-color: white;
+  border: 2px dashed #AAA;
+  border-radius: 4px;
+  clear: both;
+  display: inline-block;
+  height: 150px;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+#fechas h3 {
+  margin: 0;
+  text-decoration: underline;
+}
+
+#fechas p:not(.ciudadFecha) {
+  margin: 0;
+}
+
+#fechas p>a {
+  line-height: 2.5em;
+}
+
+.descFecha {
+  float: left;
+  /*height: 120px;*/
+  padding-right: 10px;
+  width: 200px;
+}
+
+.descFecha a {
+  color: rgba(19,113,209,0.9);
+  text-decoration: none;
+}
+
+.descFecha a:hover {
+  font-weight: bold;
+}
+
+.mapFecha {
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px #555;
+  height: 150px;
+  margin-left: 10px;
+  width: 150px;
+}
+
+.mapFecha:hover {
+  box-shadow: 2px 2px 6px #222;
+}
+
+.ciudadFecha {
+  font-weight: bold;
+  margin: 2px 0 7px 0;
+}
+
+.fechaFecha {
+  /*background-color: rgba(255,0,0,.5);*/
+  border-bottom: 1px solid #999;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 5px 20px;
+  text-shadow: 2px 2px 3px #666;
+}
+
+
+/*#### ------ ####*/
+
+@font-face {
+  font-family: "Bauhaus";
+  src: url("fonts/bauhaus/bauhausstd-light-webfont.eot");
+  src: url("fonts/bauhaus/bauhausstd-light-webfont.eot?#iefix") format("embedded-opentype"),
+      url("fonts/bauhaus/bauhausstd-light-webfont.woff") format("woff"),
+      url("fonts/bauhaus/bauhausstd-light-webfont.ttf") format("truetype"),
+      url("fonts/bauhaus/bauhausstd-light-webfont.svg#BauhausStdLightRegular") format("svg");
+}
+
+@font-face {
+  font-family: "DirtyEgo";
+  src: url("fonts/dirtyego/dirtyego-webfont.eot");
+  src: url("fonts/dirtyego/dirtyego-webfont.eot?#iefix") format("embedded-opentype"),
+      url("fonts/dirtyego/dirtyego-webfont.woff") format("woff"),
+      url("fonts/dirtyego/dirtyego-webfont.ttf") format("truetype"),
+      url("fonts/dirtyego/dirtyego-webfont.svg#DirtyEgoRegular") format("svg");
+}
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("imagenes/background_single.jpg") repeat;
+}
+
+section#contenedor {
+  margin: 10px auto 0 auto;
+  overflow: hidden;
+  width: 1250px;
+}
+
+section#video {
+  float: left;
+  height: 760px;
+  left: 50%;
+  margin-left: -467px;
+  position: relative;
+  width: 935px;
+}
+
+section header {
+  margin: 0 auto;
+  position: relative;
+  width: 935px;
+  z-index: 999;
+}
+
+section header h1 {
+  margin: 0 auto;
+  width: 605px;
+}
+
+section header h1 a {
+  background-image: url("imagenes/soldaditosMadera_c.png");
+  display: block;
+  height: 127px;
+  text-decoration: none;
+  text-indent: -9999px;
+  width: 605px;
+}
+
+article#fondoVideo {
+  background: url("imagenes/fondoVideo_c.jpg") no-repeat;
+  height: 656px;
+  position: relative;
+  top: -45px;
+  width: 935px;
+}
+
+article#fondoVideo div {
+  box-shadow: 3px 3px 5px #000;
+  height: 406px;
+  position: relative;
+  text-align: center;
+  top: 55px;
+  width: 333px;
+}
+
+div.boxTodos {
+  background: url("imagenes/Todos.jpg") no-repeat;
+  background-position: 100%;
+  background-origin: border-box;
+  border: 40px solid rgba(0,0,0,.2);
+  float: left;
+  left: 41px;
+}
+
+div.boxSextoMundo {
+  background: url("imagenes/Sexto_Mundo.jpg") no-repeat;
+  background-position: 100%;
+  background-origin: border-box;
+  border: 40px solid rgba(255,255,255,.1);
+  float: right;
+  margin-right: 41px;
+}
+
+article#fondoVideo div span:not(.cerrarVideo) {
+  display: block;
+  font-family: 'Six Caps', sans-serif;
+  font-size: 6.9em;
+  line-height: 0.87em;
+  margin-top: 212px;
+}
+
+.boxTodos span:not(.cerrarVideo) {
+  color: black;
+  transition: .3s;
+}
+
+.boxTodos span:hover {
+  cursor: hand;
+  cursor: pointer;
+  text-shadow: 2px 1px 1px #555;
+  transition: .3s;
+}
+
+.boxSextoMundo span:not(.cerrarVideo) {
+  color: white;
+  transition: .3s;
+}
+
+.boxSextoMundo span:hover {
+  cursor: hand;
+  cursor: pointer;
+  text-shadow: 2px 1px 1px #777;
+  transition: .3s;
+}
+
+article#fondoVideo span::selection {
+  text-shadow: -2px 0 4px yellow, 0 2px 4px yellow,
+                2px 0 4px yellow, 0 -2px 4px yellow;
+}
+
+article#fondoVideo span::-moz-selection {
+  background-color: yellow;
+}
+
+#fondoVideo iframe {
+  border: none;
+  display: none;
+}
+
+#fondoVideoiframe {
+  border: none;
+}
+
+.cerrarVideo {
+  background-color: #CF822E;
+  border: 2px dotted #000;
+  border-radius: 14px;
+  display: none;
+  font-size: 0.8em;
+  font-weight: bold;
+  left: 100%;
+  margin-left: 5px;
+  padding: 3px 7px;
+  position: absolute;
+  text-shadow: 2px 2px 4px #333;
+  top: -33px; 
+}
+
+.cerrarVideo:hover {
+  box-shadow: 2px 2px 4px #333;
+  cursor: pointer;
+  cursor: hand;
+}
+
+
+/*########## SOCIAL ##########*/
+
+div#contenedorSocial {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 1250px;
+}
+
+section#social {
+  background: rgba(255,255,255,0.6);
+  border-radius: 5px;
+  clear: both;
+  font-family: 'Cagliostro', sans-serif;
+  left: 50%;
+  margin-left: -467px;
+  overflow: hidden;
+  padding-top: 5px;
+  position: relative;
+  width: 935px;
+}
+
+article#youtube {
+  float: left;
+  margin: 0 4px;
+  width: 60%;
+} 
+
+section#social article h2 {
+  background: url("imagenes/tituloSeccion.jpg") no-repeat;
+  border-radius: 2px;
+  height: 39px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.banderin {
+  border-radius: 4px;
+  float: left;
+  margin: -8px 0 0 10px;
+}
+
+section#social article h2 a:hover,
+section#social article h2 a:active {
+  transition: .3s;
+  text-shadow: 1px 1px 0px #000, 0px 0px 20px #FFF;
+  text-shadow: 1px 1px 0px #000, 0px 0px 20px #FFF;
+}
+
+section#social article h2 a {
+  color: #FFF;
+  font-family: Arial;
+  margin-left: 15px;
+  text-decoration: none;
+  vertical-align: middle;
+  transition: all .3s ease-out;
+}
+
+div#comments {
+  border-right: 1px dashed #777;
+  clear: both;
+  display: none;
+  height: 485px;
+}
+
+div#comments ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+div#comments ul li span a:hover,
+div#comments ul li span a:active {
+  border: 1px solid yellow;
+  border-radius: 5px;
+}
+
+div#comments ul li span a {
+  color: #004aaa;
+  font-weight: bold;
+  padding: 0 3px;
+  text-decoration: none;
+}
+
+div#comments ul li span a:visited {
+  color: #3d3c3c;
+}
+
+div#comments ul li {
+  padding: 20px;
+}
+
+article#youtube ul li p {
+  color: #2BA7D0;
+  font-family: 'Lobster', cursive;
+  font-size: 24px;
+  margin-bottom: 0;
+  padding: 0 25px 0 25px;
+  text-align: center;
+  text-shadow: 1px 1px 0px #000, 0px 0px 20px #FFF;
+}
+
+article#youtube ul li p::selection {
+  background-color: yellow;
+}
+
+article#youtube ul li p img {
+  text-shadow: 2px 2px 0px rgba(0,0,0,1);
+}
+
+.comilla_izq {
+  margin-right: 12px;
+}
+
+.comilla_der {
+  margin-left: 12px;
+}
+
+.centrado {
+  border-right: 1px dashed #777;
+  text-align: center;
+}
+
+.cargarMasMenos {
+  background-color: yellow;
+  border: 2px dotted #CCC;
+  border-radius: 3px;
+  clear: both;
+  display: none;
+  font-family: Arial, Helvetica;
+  font-weight: bold;
+  margin: 0 20px;
+  padding: 8px 20px;
+  transition: all .3s ease-out;
+}
+
+.cargarMasMenos:hover {
+  background-color: #FFF;
+  cursor: hand;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px #CCC;
+  transition: .3s;
+}
+
+
+article#twitter {
+  float: right;
+  margin: 0 4px 0 4px;
+  width: 37.9%;
+}
+
+div#twitter_update_list {
+  border-left: 1px dashed #777;
+  clear: both;
+  display: none;
+  padding: 5px 20px 0 20px;
+}
+
+div#twitter_update_list a:hover {
+  border: 1px solid yellow;
+  border-radius: 4px;
+  padding: 0 2px;
+}
+
+div#twitter_update_list a {
+  color: #004aaa;
+  padding: 0 2px;
+}
+
+/*ul#twitter_update_list li {
+  border-bottom: 1px dotted #FFF;
+  padding: 15px 0 5px 0;
+}
+
+.primer_tweet {
+  padding-top: 0;
+}*/
+
+div#openSocial {
+  background-color: rgba(100,100,100,0.7);
+  border-radius: 0 0 5px 5px;
+  clear: both;
+  height: 11px;
+  padding: 2px;
+  text-align: center;
+  transition: all .3s ease-out;
+}
+
+div#openSocial:hover {
+  transition: .3s;
+  background-color: rgba(19,113,209,0.8);
+  cursor: pointer;
+  cursor: hand;
+}
+
+div#openSocial img {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: -5px;
+}
+
+
+/*########## FOTOS ##########*/
+
+section#fotos {
+  background-color: rgba(104,68,36,0.7);
+  border-radius: 5px 5px 0 0;
+  margin: 30px auto 0 auto;
+  overflow: hidden;
+  width: 1349px;
+}
+
+section#fotos h2 {
+  border-bottom: 1px dotted #CCC;
+  color: white;
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+  margin: 0 20px;
+  text-shadow: -2px 0 black, 0 2px black,
+                2px 0 black, 0 -2px black
+}
+
+section#fotos h2::selection {
+  text-shadow: -5px 0 20px rgba(19,113,209,0.5), 0 5px 20px rgba(19,113,209,0.5),
+                5px 0 20px rgba(19,113,209,0.5), 0 -5px 20px rgba(19,113,209,0.5);
+}
+
+section#fotos h2::-moz-selection {
+  background-color: #1371D1;
+}
+
+div#galeria {
+  border-left: 1px dotted #CCC;
+  border-right: 1px dotted #CCC;
+  margin: 15px 15px 15px 15px;
+  text-align: center;
+}
+
+div#galeria div {
+  border: 6px solid #FFF;
+  display: inline-block;
+  height: 106px;
+  margin: 5px;
+  width: 160px;
+  transition: all .3s ease-out;
+}
+
+div#galeria div:hover,
+div#galeria div:active {
+  transition: .3s;
+  border-color: rgba(19,113,209,0.9);
+  box-shadow: 2px 3px 5px rgba(0,0,0,1);
+}
+
+div#galeria div a img {
+  border: none;
+}
+
+div#borde_inferior_fotos {
+  border-bottom: 1px dotted #CCC;
+  margin: 0 20px 15px 20px;
+}
+
+
+/*##### LEITMOTIV #####*/
+
+section#leitmotiv {
+  background-image: url("imagenes/leitmotiv_c.jpg");
+  background-position: 0px 0px;
+  border-top: 5px solid #FFF;
+  height: 96px;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 1349px;
+}
+
+div#leitmotivColor {
+  background-image: url("imagenes/leitmotiv_c.jpg");
+  background-position: 0px -288px;
+  height: 96px;
+  opacity: 0;
+  filter:alpha(opacity=0); /* For IE8 and earlier */
+  overflow: hidden;
+  width: 1349px;
+}
+
+div#leitmotivContenido {
+  height: 82px;
+  overflow: hidden;
+  padding: 7px 20px;
+  position: relative;
+  top: -96px;
+  z-index: 100;
+}
+
+div#titulos {
+  float: left;
+  text-align: right;
+}
+
+span#leitmotivSoldaditos {
+  font-family: DirtyEgo, Arial, Helvetica;
+  font-size: 4em;
+}
+
+span#leitmotivSoldaditos::selection {
+  text-shadow: -2px 0 5px rgba(19,113,209,0.3), 0 2px 5px rgba(19,113,209,0.3),
+                2px 0 5px rgba(19,113,209,0.3), 0 -2px 5px rgba(19,113,209,0.3);
+}
+
+span#leitmotivSoldaditos::-moz-selection {
+  background-color: #1371D1;
+}
+
+h2#leitmotivTitulo {
+  font-family: Bauhaus, Arial, Helvetica;
+  font-size: 1.3em;
+  margin: -9px 0 0 0;
+}
+
+h2#leitmotivTitulo::selection {
+  text-shadow: -2px 0 5px rgba(19,113,209,0.3), 0 2px 5px rgba(19,113,209,0.3),
+                2px 0 5px rgba(19,113,209,0.3), 0 -2px 5px rgba(19,113,209,0.3);
+}
+
+h2#leitmotivTitulo::-moz-selection {
+  background-color: #1371D1;
+}
+
+div#descripcion {
+  float: right;
+  font-family: Bauhaus, Arial, Helvetica;
+  height: 82px;
+  width: 900px;
+}
+
+div#descripcion p {
+  line-height: 1.5em;
+  margin: 0;
+  padding: 5px 0;
+}
+
+div#descripcion p::selection {
+  text-shadow: -2px 0 5px rgba(19,113,209,0.3), 0 2px 5px rgba(19,113,209,0.3),
+                2px 0 5px rgba(19,113,209,0.3), 0 -2px 5px rgba(19,113,209,0.3);
+}
+
+div#descripcion p::-moz-selection {
+  background-color: #1371D1;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+.negrita::selection {
+  text-shadow: -2px 0 5px rgba(19,113,209,0.3), 0 2px 5px rgba(19,113,209,0.3),
+                2px 0 5px rgba(19,113,209,0.3), 0 -2px 5px rgba(19,113,209,0.3);
+}
+
+.negrita::-moz-selection {
+  background-color: #1371D1;
+}
+
+.abreDescargar {
+  transition: .3s;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 0 3px;
+}
+
+.abreDescargar:hover {
+  transition: .3s;
+  cursor: pointer;
+  cursor: hand;
+  color: white;
+  background-color: rgba(19,113,209,0.9);
+  text-shadow: 1px 1px 2px rgba(190,190,190,0.7);
+}
+
+.abreDescargar::selection {
+  text-shadow: -2px 0 5px rgba(19,113,209,0.3), 0 2px 5px rgba(19,113,209,0.3),
+                2px 0 5px rgba(19,113,209,0.3), 0 -2px 5px rgba(19,113,209,0.3);
+}
+
+.abreDescargar::-moz-selection {
+  background-color: #1371D1; 
+}
+
+div#botonesDescarga {
+  display: none;
+  float: right;
+  font-family: DirtyEgo, Arial, Helvetica;
+  font-size: 1.8em;
+  margin: 15px 40px 0 0;
+  text-align: right;
+}
+
+div#botonesDescarga a {
+  transition: .3s;
+  background-color: rgba(0,0,0,0.5);
+  border: 1px solid black;
+  border-radius: 8px;
+  color: white;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+}
+
+div#botonesDescarga a:hover {
+  transition: .3s;
+  background-color: rgba(19,113,209,0.9);
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  text-shadow: 1px 1px 2px rgba(190,190,190,0.7);
+}
+
+div#leitmotivCerrar {
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+  clear: both;
+  cursor: pointer;
+  cursor: hand;
+  display: none;
+  margin: 1px auto 0 auto;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  top: -288px;
+  width: 100px;
+}
+
+div#tooltipDescargas {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.4em;
+  margin: 3px 0 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+div#tooltipDescargas span {
+  background: url("imagenes/descargaLeitmotiv_c.png");
+  display: inline-block;
+  height: 74px;
+  margin: 0;
+  opacity: 0.1;
+  padding: 0;
+  width: 132px;
+}
+
+div#tooltipDescargas span.central {
+  margin: 0 22px;
+}
+
+div#tooltipDescargas span p:first-child {
+  font-weight: bold;
+}
+
+
+/*##### FOOTER #####*/
+
+footer {
+  background-color: rgba(255,255,255,0.7);
+  border-top: 5px solid #FFF;
+  font-size: 0.8em;
+  margin: 0 auto;
+  padding: 15px 200px;
+  width: 949px;
+}
+
+span#LinksSocial {
+  float: right;
+}
+
+footer a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: black;
+}
+
+footer a {
+  margin: 0 5px;
+  border: 1px dotted white;
+  border-radius: 4px;
+  padding: 3px;
+  transition: all .3s ease-out;
+}
+
+footer a:hover {
+  transition: .3s;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(190,190,190,0.7);
+}
+
+.lm:hover {
+  background-color: rgba(19,113,209,0.9);
+}
+
+.fb:hover {
+  background-color: rgba(59,89,152,0.9);
+}
+
+.tw:hover {
+  background-color: rgba(0,190,246,0.9);
+}
+
+.yt:hover {
+  background-color: rgba(200,49,43,0.9);
+}
+
+footer span::selection {
+  text-shadow: -5px 0 10px yellow, 0 5px 10px yellow,
+                5px 0 10px yellow, 0 -5px 10px yellow;
+}
+
+footer span::-moz-selection {
+  background-color: yellow;
+}
+
+footer span a::selection {
+  text-shadow: -5px 0 10px yellow, 0 5px 10px yellow,
+                5px 0 10px yellow, 0 -5px 10px yellow
+}
+
+footer span a::-moz-selection {
+  background-color: yellow;
+}
